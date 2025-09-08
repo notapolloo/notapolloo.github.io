@@ -13,6 +13,22 @@
       background-attachment: fixed;
       background-size: cover;
     }
+    .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .2s ease;
+  background-color: #008CBA;
+}
+.container:hover .overlay {
+  opacity: 1;
+}
+
     </style>
 </head>
 
@@ -22,8 +38,14 @@
           <header>
         <h1>And the ANGEL said...</h1>
          </header>
+<div class="container">
+<p><a href="angelHouse.html"><img src="/Imgs/batgel.png" alt="bat-angel drawing" height=300px></a>
+   </p>
+   <div class="overlay">
+      <img src="/Imgs/batgel2.png" alt="bat-angel drawing" height=300px>
+   </div>
+</div>
 
-<p><a href="angelHouse.html"><img src="/Imgs/batgel.png" alt="bat-angel drawing" height=200px></a>
 </p>
       <p>Will you take me high?<br>
       Hold my hands<br>
