@@ -1,32 +1,53 @@
 
-body {
-    background-image: url('/Imgs/Forest2.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
-.hoverImage{
-   /* position: relative;*/
-    display: inline-block;
-
-}
-.container{
-    display: inline-block;
-
-}
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .2s ease;
-    
-}
-.container:hover + .overlay { /*psuedo-class*/
-    opacity: 1;
+.container {
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: inline-block;
 }
 
+.container2 {
+  display: flex;
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: inline-block;
+}
+
+
+.batgel,
+.batgel2 {
+position: absolute;
+top: 0;
+left: 100px;
+transition: opacity 0.3s;
+}
+
+.batgel2 {
+opacity: 0;
+pointer-events: none;
+}
+
+.container:hover .batgel2 {
+opacity: 1;
+}
+
+.container:hover .batgel {
+opacity: 0;
+}
+
+p{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 2px 1px 0 rgb(8, 72, 212);
+
+    color:rgb(249, 250, 255);
+    font-size: 30px;
+}
+h1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 2px 1px 0 rgb(8, 72, 212);
+    color:rgb(249, 250, 255);
+    font-size: 50px;
+}
