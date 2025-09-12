@@ -2,15 +2,15 @@
 .container {
   position: sticky;
   top: 0;
-  left: 0;
+  left: 0%;
+  
   display: inline-block;
 }
 
 .container2 {
-  display: flex;
   position: sticky;
   top: 0;
-  left: 0;
+  left: 75%;
   display: inline-block;
 }
 
@@ -19,11 +19,25 @@
 .batgel2 {
 position: absolute;
 top: 0;
-left: 100px;
+
+
 transition: opacity 0.3s;
 }
 
 .batgel2 {
+opacity: 0;
+pointer-events: none;
+}
+
+.batgel3,
+.batgel4 {
+position: absolute;
+top: 0;
+
+
+transition: opacity 0.3s;
+}
+.batgel4 {
 opacity: 0;
 pointer-events: none;
 }
@@ -36,6 +50,13 @@ opacity: 1;
 opacity: 0;
 }
 
+.container2:hover .batgel4 {
+opacity: 1;
+}
+
+.container2:hover .batgel3 {
+opacity: 0;
+}
 p{
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
